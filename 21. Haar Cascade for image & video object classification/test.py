@@ -5,7 +5,7 @@ face_cascade = cv2.CascadeClassifier('frontalface.xml')
 eye_cascade = cv2.CascadeClassifier('eye.xml')
 smile_cascade = cv2.CascadeClassifier('smile.xml')
 
-cap = cv2.VideoCapture('video.mp4')
+cap = cv2.VideoCapture(0)
 
 while True:
     ret, img = cap.read()
